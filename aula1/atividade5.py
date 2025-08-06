@@ -1,4 +1,4 @@
-x= "Qual o seu nome"
-y=input(Aarão)
-z= f"Olá, {y}! =)
-print(z)
+aa= "Qual o seu nome:"
+vc=input(aa)
+oi= f"Olá, {vc}! =)"
+print(oi)
