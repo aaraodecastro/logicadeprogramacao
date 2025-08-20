@@ -5,7 +5,7 @@ while n!=x:
     t=t+1
     if n>x:
         n=int(input(f"Muito alto,tente um número menor que:{n}"))
-    else
+    else:
         n=int(input(f"Muito alto,tente um número maior que:{n}"))
 print(f"Parabens, você acertou em {t} vezes.")
 
