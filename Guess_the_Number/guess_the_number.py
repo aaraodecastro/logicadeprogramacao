@@ -1,5 +1,7 @@
+import ramdom
+
+numerocerto= random.radint(1,10)
 numerousuario=int(input("Digite um número de 1 a 10"))
-numerocerto=7
 t=1
 while numerousuario!=numerocerto:
     t=t+1
