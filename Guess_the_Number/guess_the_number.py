@@ -2,8 +2,8 @@ import random
 
 try:
     
-    numerocerto = random.randint(1,10)
-    numerousuario=int(input("Digite um número de 1 a 10:"))
+    numerocerto = random.randint(1,100)
+    numerousuario=int(input("Digite um número de 1 a 100:"))
     t=1
     while numerousuario!=numerocerto:
         t=t+1
