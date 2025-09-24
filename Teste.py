@@ -1,38 +1,27 @@
-dados={
-    "nome":"Zé",
-    "telefone":"1",
-    "e-mail":"a",
-}
 
-print("Opção 1 = Inserir nome")
-print("Opção 2 = Inserir telefone")
-print("Opção 3 = Inserir e-mail")
-print("Opção 4 = Sair")
-
-     
-
+clientes = []
+from time import sleep
+import os 
+from random import choice
 
 while True:
-
-    operacao=input(print("Digite sua opção:"))
-    
-
-    if operacao == 'sair':
-        print("Saindo")
+    print("="*30)
+    print("Doceria do Zé".center(30))
+    print("="*30)
+    cliente = {}
+    cliente["nome"] = input("Digite seu nome:")
+    if cliente["nome"] == "sair":
         break
-    elif operacao =="1":
-         
-         numero1 = float(input("Digite o seu nome:"))
-        
-         
-    elif operacao =="2":
+    cliente["telefone"] = input("Digite seu telefone:")
+    cliente["email"] = input("Digite seu email:")
+    clientes.append(cliente)
+    print("\033[31mCliente Adicionado Com sucesso!  \033[m")
+    sleep(5)
+    os.system("clear")
+    
+print(clientes)
 
-        numero2 = float(input("Digite o seu telefone:"))
+cliente_sorteado = choice(clientes)
+print(f"Parabéns {cliente_sorteado["nome"]} Você foi sorteado!")
 
-    elif operacao =="3":
-
-        numero3 = float(input("Digite o seu e-mail:"))
-
-    else:
-        print("Operação inválida. Tente novamente.")
-        continue
+=========================================================
