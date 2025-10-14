@@ -1,9 +1,12 @@
-salario = float(input("Digite o valor do salário: "))
-dias = int(input("Digite o número de dias atrasados: "))
-if dias > 5:
-  tempo = dias - 5
-  multa = salario * tempo * 0.02
-  print("O salário está em atraso")
-  print(f"O valor da multa é: R${multa}.")
+num1 = int(input("Digite o primério número do seu intervalo: "))
+num2 = int(input("Digite o segundo número do seu intervalo: "))
+par = False
+soma = 0
+for numero in range(num1,num2 + 1):
+  if numero %2 == 0:
+    soma = soma + numero
+    par = True
 else:
-  print("Ainda está no prazo")
+  if not par:
+    print("Não existe pares nesse intervalo")
+print(f"A soma dos números pares desse intervalo é {soma}")
